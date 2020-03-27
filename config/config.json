@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "webpart-one-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webpartOne/WebpartOneWebPart.js",
+          "manifest": "./src/webparts/webpartOne/WebpartOneWebPart.manifest.json"
+        }
+      ]
+    },
+    "extension-one-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/extensionOne/ExtensionOneCommandSet.js",
+          "manifest": "./src/extensions/extensionOne/ExtensionOneCommandSet.manifest.json"
+        }
+      ]
+    },
+    "extension-two-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/extensionTwo/ExtensionTwoCommandSet.js",
+          "manifest": "./src/extensions/extensionTwo/ExtensionTwoCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WebpartOneWebPartStrings": "lib/webparts/webpartOne/loc/{locale}.js",
+    "ExtensionOneCommandSetStrings": "lib/extensions/extensionOne/loc/{locale}.js",
+    "ExtensionTwoCommandSetStrings": "lib/extensions/extensionTwo/loc/{locale}.js"
+  }
+}
